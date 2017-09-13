@@ -1,0 +1,52 @@
+HDFS -> Hadoop Distributed File System
+YARN -> Yet Another Resource Negotiator
+MapReduce -> Data processing using programming
+Spark -> In-memory Data Processing
+PIG, HIVE-> Data Processing Services using Query (SQL-like)
+HBase -> NoSQL Database
+Mahout, Spark MLlib -> Machine Learning
+Apache Drill -> SQL on Hadoop
+Zookeeper -> Managing Cluster
+Oozie -> Job Scheduling
+Flume, Sqoop -> Data Ingesting Services
+Solr & Lucene -> Searching & Indexing 
+Ambari -> Provision, Monitor and Maintain cluster
+
+
+1. PIG. 
+	Contains PIG Latin and PIG Runtime. PIG is like a SQL and provides abstraction for the MapReduce functions. PIG Latin code is internally converts 
+	to MapReduce
+	It gives you a platform for building data flow for ETL (Extract, Transform and Load), processing and analyzing huge data sets.
+How Pig works?
+	In PIG, first the load command, loads the data. Then we perform various functions on it like grouping, filtering, joining, sorting, etc. At last, either you can dump the data on the screen or you can store the result back in HDFS.
+
+2. APACHE HIVE
+	Created by Facebook for people fluent with SQL
+	HIVE is a data warehousing component which performs reading, writing and managing large data sets in a distributed environment using SQL-like interface.
+	It has 2 basic components: Hive Command Line and JDBC/ODBC driver.
+
+3. Mahout
+	It performs collaborative filtering, clustering and classification. Some people also consider frequent item set missing as Mahout’s function.
+
+4. APACHE SPARK
+	Apache Spark is a framework for real time data analytics in a distributed computing environment. The Spark is written in Scala	
+	It executes in-memory computations to increase speed of data processing over Map-Reduce
+	It is 100x faster than Hadoop for large scale data processing by exploiting in-memory computations and other optimizations. Therefore, it requires high processing power than Map-Reduce
+5. HBase
+	HBase is an open source, non-relational distributed database. In other words, it is a NoSQL database.
+	It supports all types of data and that is why, it’s capable of handling anything and everything inside a Hadoop ecosystem.
+	
+6. Apache Zookeeper
+	Apache Zookeeper is the coordinator of any Hadoop job which includes a combination of various services in a Hadoop Ecosystem.
+	Apache Zookeeper coordinates with various services in a distributed environment.
+	It saves a lot of time by performing synchronization, configuration maintenance, grouping and naming.
+
+7. Apache Oozie
+	There are two kinds of Oozie jobs:
+	Oozie workflow: 
+		These are sequential set of actions to be executed. You can assume it as a relay race. 
+		Where each athlete waits for the last one to complete his part.
+	
+	Oozie Coordinator: 
+		These are the Oozie jobs which are triggered when the data is made available to it. 
+		Think of this as the response-stimuli system in our body. In the same manner as we respond to an external stimulus, an Oozie coordinator responds to the availability of data and it rests otherwise
